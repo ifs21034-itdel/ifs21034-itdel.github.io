@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="custom.css" />
-    <link rel="stylesheet" href="layouts.css" />
+
   </head>
   <body>
+    <!-- Membuat artikel sederhana dengan HTML -->
     <div class="container">
       <header class="main-header clearfix">
         <h1>&#9742; Contact Us</h1>
@@ -20,69 +22,78 @@
         </nav>
       </header>
 
-      <main >
-        <form>
-          <table width="100%">
-            <caption>
-              <h2>Hubungi Kami</h2>
+      <form>
+        <table width="100%" id="contact">
+          <caption>
+            <h2>Hubungi Kami</h2>
+          </caption>
+          <tr>
+            <td><label for="name">Nama Lengkap</label></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="name" name="name" /></td>
+          </tr>
 
-            </caption>
-            <tr>
-              <td><label for="name">Nama Lengkap</label></td>
-              <td><input type="text" id="name" name="name" /></td>
-            </tr>
-            <tr>
-              <td><label for="email">Alamat Email</label></td>
-              <td><input type="email" id="email" name="email" /></td>
-            </tr>
-            <tr>
-              <td><label for="kategori">Kategori</label></td>
-              <td>
-                <input
-                  type="radio"
-                  id="report"
-                  name="kategori"
-                  value="report"
-                />
-                <label for="report">Laporan</label>
-                <input
-                  type="radio"
-                  id="feedback"
-                  name="kategori"
-                  value="feedback"
-                />
-                <label for="feedback">Masukkan</label>
-              </td>
-            </tr>
-            <tr>
-              <td><label for="message">Pesan</label></td>
-              <td>
-                <textarea id="message" name="message" rows="5"></textarea>
-              </td>
-            </tr>
-            <tr align="center">
-              <td colspan="2">
-                <input
-                  type="checkbox"
-                  id="verification"
-                  name="verification"
-                  value="1"
-                  required
-                />
-                <label for="verification">Konfirmasi Tindakan</label>
-              </td>
-            </tr>
-            <tr align="center">
-              <td colspan="2">
-                <input type="submit" value="Kirim" />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2"><hr /></td>
-            </tr>
-          </table>
-        </form>
-      </main>
+          <tr>
+            <td><label for="email">Alamat Email</label></td>
+          </tr>
+          <tr>
+            <td><input type="email" id="email" name="email" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="kategori">Kategori</label></td>
+          </tr>
+          <tr>
+            <td>
+              <input 
+                type="radio" 
+                id="report" 
+                name="kategori" 
+                value="report"
+              />
+              <label for="report">Laporan</label>
+              <input
+                type="radio"
+                id="feedback"
+                name="kategori"
+                value="feedback"
+              />
+              <label for="feedback">Masukkan</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="message">Pesan</label></td>
+          </tr>
+          <tr>
+            
+            <td>
+              <input type="textarea" id="message" name="message" rows="5"></input>
+            </td>
+          </tr>
+          <tr align="center">
+            <td colspan="2">
+              <input
+                type="checkbox"
+                id="verification"
+                name="verification"
+                value="1"
+                required
+              />
+              <label for="verification">Konfirmasi Tindakan</label>
+            </td>
+          </tr>
+          <tr align="center">
+            <td>
+              <button class="button">Kirim</button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><hr /></td>
+          </tr>
+        </table>
+      </form>
     </div>
   </body>
 </html>
