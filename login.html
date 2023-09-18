@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <title>Login</title>
     <link rel="stylesheet" href="custom.css" />
-    <link rel="stylesheet" href="layouts.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <header class="main-header clearfix">
-        <h1>Login</h1>
+        <h1>&#9919;Login</h1>
 
         <nav>
           <a href="index.html">Home</a>
@@ -20,86 +20,78 @@
         </nav>
       </header>
 
-      <article>
-        <main>
-          <table width="100%" cellspacing="5px">
-            <tr>
-              <td width="50%">
-                <fieldset>
-                  <legend><h2>Login</h2></legend>
-                  <table cellpadding="5">
-                    <tr>
-                      <td><label for="email">Email</label></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="text" name="email" id="email" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><label for="password">Password</label></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="password" name="password" id="password" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><input type="submit" value="Submit" /></td>
-                    </tr>
-                  </table>
-                </fieldset>
-              </td>
-              <td width="50%">
-                <fieldset>
-                  <legend><h2>Register</h2></legend>
-                  <table cellpadding="5">
-                    <tr>
-                      <td><label for="nama">Nama Lengkap</label></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="name" name="nama" id="nama" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><label for="Email">Email</label></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="email" name="email" id="email" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><label for="job">Pekerjaan</label></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <select name="job" id="">
-                          <option value="mahasiswa">Mahasiswa</option>
-                          <option value="dosen">Dosen</option>
-                          <option value="asdos">Asisten Dosen</option>
-                        </select>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><label for="password">Password</label></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="password" name="password" id="password" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><input type="submit" value="Submit" /></td>
-                    </tr>
-                  </table>
-                </fieldset>
-              </td>
-            </tr>
-          </table>
-        </main>
-      </article>
+      <div>
+        <table width="100%" cellspacing="10px">
+          <tr>
+            <td width="50%" class="td-login">
+              <fieldset>
+                <legend><h2>Log in</h2></legend>
+                <table>
+                  <tr>
+                    <label for="email">Email</label>
+                  </tr>
+                  <tr>
+                    <input type="email" name="email" id="email" />
+                  </tr>
+
+                  <tr>
+                    <label for="password">Password</label>
+                  </tr>
+                  <tr>
+                    <input type="password" name="password" id="password" />
+                  </tr>
+                  <tr>
+                    <td style="text-align: center">
+                      <button class="button">Submit</button>
+                    </td>
+                  </tr>
+                </table>
+              </fieldset>
+            </td>
+
+            <td class="td-register">
+              <fieldset>
+                <legend><h2>Register</h2></legend>
+                <table cellpadding="5">
+                  <tr>
+                    <label for="nama">Nama Lengkap</label>
+                  </tr>
+                  <tr>
+                    <input type="name" name="nama" id="nama" />
+                  </tr>
+                  <tr>
+                    <label for="Email">Email</label>
+                  </tr>
+                  <tr>
+                    <input type="email" name="email" id="email" />
+                  </tr>
+                  <tr>
+                    <label for="job">Pekerjaan</label>
+                  </tr>
+                  <tr>
+                    <select name="job" id="">
+                      <option value="mahasiswa">Mahasiswa</option>
+                      <option value="dosen">Dosen</option>
+                      <option value="asdos">Asisten Dosen</option>
+                    </select>
+                  </tr>
+                  <tr>
+                    <label for="password">Password</label>
+                  </tr>
+                  <tr>
+                    <input type="password" name="password" id="password" />
+                  </tr>
+                  <tr>
+                    <td style="text-align: center">
+                      <button class="button">Submit</button>
+                    </td>
+                  </tr>
+                </table>
+              </fieldset>
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
   </body>
 </hmtl>
